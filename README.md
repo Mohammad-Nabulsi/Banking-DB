@@ -19,13 +19,23 @@ Banking-DB-SQL/
 
 ---
 
-## 🧰 Requirements
+# 🧰 Requirements
 
 - **SQLite 3** (any OS)  
+- **Python 3.8+**  
+- **Pandas** (for data handling)  
+- **Streamlit** (for interactive interface)  
 - Command-line / terminal access  
 - *(Optional)* GUI tool such as **DB Browser for SQLite**  
 
 > 💡 **Windows users:** Ensure `sqlite3.exe` is in your **PATH** or in the same folder as this project.
+### Install dependencies
+
+After cloning the project, run:
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
@@ -100,9 +110,14 @@ This performs scheduled database updates and cleanups (details below).
 
 ### 6️⃣ Verify Changes (Optional)
 
-Run the following in terminal: 
+### 6️⃣ Verify Changes (Optional)
+
+Instead of running queries manually in the terminal, you can **verify all updates and view the tables** using the **Streamlit interface**.
+
+Run the Streamlit app:
+
 ```bash
-sqlite3 banking.db
+streamlit run app.py
 ```
 
 then run any of the following inside:
