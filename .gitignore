@@ -1,0 +1,14 @@
+# Ignore database and SQLite files
+banking.db
+*.sqlite
+*.db
+
+# Ignore macOS Finder files
+.DS_Store
+
+# Ignore Python cache or env folders (if used later)
+__pycache__/
+*.pyc
+.env
+venv/
+env/
